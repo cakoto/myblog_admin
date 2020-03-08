@@ -1,21 +1,6 @@
-#配置文件
+#閰嶇疆鏂囦欢
 spring:
   thymeleaf:
     mode: HTML
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: root
-  jpa:
-    hibernate:
-      ddl-auto: update #比较验证
-    show-sql: true
-logging:
-  level:
-    root: info
-    com.gyf: debug
-  file: log/blog.log
-
-
-
+  profiles:
+    active: develop
