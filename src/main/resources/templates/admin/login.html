@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>登录</title>
+</head>
+<body>
+    <div class="ui middle aligned center aligned grid m-h-center">
+        <div class="column"style="max-width: 30em !important;">
+            <h2 class="ui teal image header">
+                <div class="content">
+                    Login
+                </div>
+            </h2>
+            <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
+                <div class="ui stacked segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="username" placeholder="Email/UserName">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input type="password" name="password" placeholder="password">
+                        </div>
+                    </div>
+                    <button class="ui fluid large teal submit button">Login</button>
+                </div>
+
+                <div class="ui error message"></div>
+
+            </form>
+
+            <div class="ui message">
+                New to us? <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

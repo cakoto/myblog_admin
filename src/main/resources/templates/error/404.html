@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <title>404</title>
 </head>
 <body>
+    <nav th:replace="_fragments :: menu(0)"></nav>
     <h2>404</h2>
     <h2> NOT FOUND</h2>
     <h1>Looks like you got lost.</h1>
+    <footer th:replace="_fragment :: footer"></footer>
 </body>
 </html>
