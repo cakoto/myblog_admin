@@ -463,13 +463,12 @@ int main()
 <script>
     $('.menu.toggle').click(function () {
         $('.menu-item').toggleClass('m-mobile-hide');
-    })
+    });
 
     $('.ui.sticky')
         .sticky({
             context: '#content-area'
-        })
-    ;
+        });
 
     tocbot.init({
         // Where to render the table of contents.
@@ -490,7 +489,7 @@ int main()
         $('#toComments-button').click(function () {
             $(window).scrollTo('#comments-container' || 0, 500);
         });
-    })
+    });
 
     var waypoint = new Waypoint({
         element: document.getElementById('blog-begin'),

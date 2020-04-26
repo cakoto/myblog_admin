@@ -33,7 +33,7 @@ public class LoginController {
         if(user != null) {
             user.setPassword(null);
             session.setAttribute("user", user);
-            return "admin/blog_manage";
+            return "admin/index";
         } else {
             attributes.addFlashAttribute("message", "用户名或密码错误");
             return "redirect:/admin";
