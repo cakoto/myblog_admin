@@ -16,7 +16,7 @@
         <div class="ui  stackable secondary menu">
             <h2 class="ui  header item">圆环之理</h2>
             <a href="#" class="menu-item item m-mobile-hide" th:classappend="${id == 1} ? 'active'"><i class=" home icon"></i>博客</a>
-            <a href="#" class="menu-item item m-mobile-hide" th:classappend="${id == 2} ? 'active'"><i class=" clone icon"></i>分类</a>
+            <a th:href="@{/admin/types}" class="menu-item item m-mobile-hide" th:classappend="${id == 2} ? 'active'"><i class=" clone icon"></i>分类</a>
             <a href="#" class="menu-item item m-mobile-hide" th:classappend="${id == 3} ? 'active'"><i class=" tags icon"></i>标签</a>
             <a href="/admin/logout" class="menu-item1 item m-mobile-show1" th:classappend="${id == 4} ? 'active'"><i class="power off icon "></i>注销</a>
 

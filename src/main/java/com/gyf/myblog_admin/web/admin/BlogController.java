@@ -10,6 +10,6 @@ public class BlogController {
 
     @GetMapping("/blogs")
     public String blogs() {
-        return "admin/blog_manage";
+        return "blog-manage";
     }
 }
